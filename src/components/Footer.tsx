@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { MapPin, Phone, Twitter, Facebook, Instagram } from 'lucide-react';
+import { MapPin, Phone, Twitter, Facebook, Instagram, LogIn } from 'lucide-react';
 
 export function Footer() {
   const companyLocation = 'TK building, wello sefer';
@@ -37,8 +37,11 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8 border-t border-border pt-6 text-center text-sm text-muted-foreground">
+        <div className="mt-8 border-t border-border pt-6 text-center text-sm text-muted-foreground flex items-center justify-center relative">
           <p>&copy; {new Date().getFullYear()} Omega Shelf &amp; Shutter. All rights reserved.</p>
+           <Link href="/admin/login" aria-label="Admin Login" className="absolute right-0 text-muted-foreground hover:text-primary transition-colors">
+            <LogIn className="h-5 w-5" />
+          </Link>
         </div>
       </div>
     </footer>
