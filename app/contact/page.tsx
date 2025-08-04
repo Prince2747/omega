@@ -8,6 +8,7 @@ import { Phone, MapPin, Mail } from 'lucide-react';
 export default function ContactPage() {
   const companyLocation = 'TK building, wello sefer';
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(companyLocation)}`;
+  const companyEmail = 'omegashelfandshutters@gmail.com';
 
   return (
     <div className="container py-12 md:py-24">
@@ -24,20 +25,25 @@ export default function ContactPage() {
             <CardDescription>Fill out the form and we'll get back to you shortly.</CardDescription>
           </CardHeader>
           <CardContent>
-            <form className="space-y-4">
+            <form
+              action={`mailto:${companyEmail}`}
+              method="post"
+              encType="text/plain"
+              className="space-y-4"
+            >
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name</Label>
-                  <Input id="name" placeholder="Your Name" />
+                  <Input id="name" name="name" placeholder="Your Name" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="your@email.com" />
+                  <Input id="email" name="email" type="email" placeholder="your@email.com" />
                 </div>
               </div>
               <div className="space-y-2">
                 <Label htmlFor="message">Message</Label>
-                <Textarea id="message" placeholder="How can we help?" rows={5} />
+                <Textarea id="message" name="body" placeholder="How can we help?" rows={5} />
               </div>
               <Button type="submit" className="w-full">Submit</Button>
             </form>
@@ -51,8 +57,8 @@ export default function ContactPage() {
                 <CardContent className="space-y-4 text-sm">
                     <div className="flex items-start">
                         <Mail className="w-5 h-5 mr-3 mt-1 shrink-0 text-primary" />
-                        <a href="mailto:omegashelfandshutters@gmail.com" className="hover:underline">
-                        omegashelfandshutters@gmail.com
+                        <a href={`mailto:${companyEmail}`} className="hover:underline">
+                        {companyEmail}
                         </a>
                     </div>
                      <div className="flex items-start">
