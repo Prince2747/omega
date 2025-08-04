@@ -29,9 +29,6 @@ export function Header() {
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
             <ThemeToggle />
-            <Button asChild>
-                <Link href="/admin/login">Admin Sign-in</Link>
-            </Button>
         </div>
       </div>
     </header>
