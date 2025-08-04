@@ -2,14 +2,14 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import Image from 'next/image';
-
+import Omega from "../public/Omega.jpg"
 export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
         <div className="flex-1 flex items-center justify-start">
           <Link href="/" className="flex items-center space-x-2">
-            <Image src="/omega.png" alt="Omega logo" width={24} height={24} className="h-6 w-6" />
+            <Image src={Omega} alt="Omega logo" width={40} height={24} className="h-6 w-6" />
             <span className="font-bold font-headline text-lg">Omega Shelf & Shutter</span>
           </Link>
         </div>
