@@ -48,8 +48,7 @@ export default async function ProductDetailPage({ params }: { params: { id: stri
 
             <Separator className="my-6" />
 
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-              <p className="text-4xl font-bold font-body text-primary">${product.price.toFixed(2)}</p>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-end gap-4">
               <Button size="lg" className="w-full sm:w-auto">
                 <ShoppingCart className="mr-2" /> Add to Cart
               </Button>

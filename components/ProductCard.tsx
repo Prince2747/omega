@@ -33,8 +33,7 @@ export function ProductCard({ product }: ProductCardProps) {
           </Link>
         </CardTitle>
       </CardContent>
-      <CardFooter className="p-4 pt-0 flex justify-between items-center">
-        <p className="text-xl font-bold font-body">${product.price.toFixed(2)}</p>
+      <CardFooter className="p-4 pt-0 flex justify-end items-center">
         <Button asChild size="sm">
           <Link href={`/products/${product.id}`}>View Details</Link>
         </Button>
