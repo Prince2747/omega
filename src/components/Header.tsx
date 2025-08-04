@@ -16,19 +16,19 @@ export function Header() {
         <nav className="hidden items-center justify-center space-x-6 text-sm font-medium md:flex flex-1">
             <Link
               href="/"
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
+              className="relative text-foreground/60 transition-colors hover:text-foreground/80 after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100"
             >
               Home
             </Link>
             <Link
               href="/products"
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
+              className="relative text-foreground/60 transition-colors hover:text-foreground/80 after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100"
             >
               Our Products
             </Link>
             <Link
               href="/contact"
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
+              className="relative text-foreground/60 transition-colors hover:text-foreground/80 after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100"
             >
               Contact Us
             </Link>
