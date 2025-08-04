@@ -1,8 +1,7 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
 import { Eye, CheckSquare, CreditCard, Truck } from 'lucide-react';
-import { cn } from '@/lib/utils';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const steps = [
@@ -28,36 +27,24 @@ const steps = [
   },
 ];
 
+const cardVariants = {
+  hidden: (direction: 'left' | 'right') => ({
+    opacity: 0,
+    x: direction === 'left' ? -100 : 100,
+  }),
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.8,
+      ease: 'easeOut',
+    },
+  },
+};
+
 export function HowItWorks() {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
-
   return (
-    <section ref={sectionRef} className="bg-muted/40 py-12 md:py-24">
+    <section className="bg-muted/40 py-12 md:py-24">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-headline font-bold">How It Works</h2>
@@ -71,13 +58,13 @@ export function HowItWorks() {
           
           <div className="grid md:grid-cols-4 gap-8">
             {steps.map((step, index) => (
-              <div
+              <motion.div
                 key={index}
-                className={cn(
-                  'opacity-0 transform',
-                  isVisible && (index % 2 === 0 ? 'animate-slide-in-left' : 'animate-slide-in-right')
-                )}
-                style={{ animationDelay: `${index * 200}ms` }}
+                custom={index % 2 === 0 ? 'left' : 'right'}
+                variants={cardVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
               >
                 <Card className="text-center h-full shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <CardHeader>
@@ -90,7 +77,7 @@ export function HowItWorks() {
                     <p className="text-muted-foreground">{step.description}</p>
                   </CardContent>
                 </Card>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
