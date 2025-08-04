@@ -7,14 +7,14 @@ export default function LandingPage() {
   return (
     <>
       <section className="container grid lg:grid-cols-2 gap-8 items-center py-12 md:py-24">
-        <div className="flex flex-col items-start gap-4">
+        <div className="flex flex-col items-center lg:items-start gap-4 text-center lg:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-headline font-bold">
             Exquisite Shelving &amp; Shutters
           </h1>
           <p className="text-lg text-muted-foreground">
             Discover bespoke, high-quality solutions to elevate your space. Crafted with precision, designed for life.
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" asChild>
               <Link href="/products">Explore Our Products</Link>
             </Button>
