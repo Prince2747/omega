@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Package2 } from 'lucide-react';
+import { Logo } from '@/components/Logo';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/ThemeToggle';
 
@@ -9,7 +9,7 @@ export function Header() {
       <div className="container flex h-14 items-center">
         <div className="flex-1 flex items-center justify-start">
           <Link href="/" className="flex items-center space-x-2">
-            <Package2 className="h-6 w-6 text-primary" />
+            <Logo className="h-6 w-6 text-primary" />
             <span className="font-bold font-headline text-lg">Omega Shelf & Shutter</span>
           </Link>
         </div>

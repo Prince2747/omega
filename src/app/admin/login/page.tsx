@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { Package2 } from 'lucide-react';
+import { Logo } from '@/components/Logo';
 import { useToast } from '@/hooks/use-toast';
 
 export default function LoginPage() {
@@ -27,7 +27,7 @@ export default function LoginPage() {
         <form onSubmit={handleSubmit}>
           <CardHeader className="text-center">
             <div className="flex justify-center mb-4">
-              <Package2 className="h-8 w-8 text-primary" />
+              <Logo className="h-8 w-8 text-primary" />
             </div>
             <CardTitle className="text-2xl font-headline">Admin Sign-in</CardTitle>
             <CardDescription>Enter your credentials to access the dashboard.</CardDescription>
