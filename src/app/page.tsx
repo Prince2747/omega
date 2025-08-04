@@ -1,22 +1,38 @@
-import { getProducts } from '@/lib/data';
-import { ProductGrid } from '@/components/ProductGrid';
+import { Button } from '@/components/ui/button';
 import { VisitUs } from '@/components/VisitUs';
+import Image from 'next/image';
+import Link from 'next/link';
 
-export default async function Home() {
-  const products = await getProducts();
-
+export default function LandingPage() {
   return (
     <>
-      <div className="container py-8 md:py-12">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-headline font-bold">Product Catalog</h1>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover our curated collection of fine products, designed with quality and style in mind.
+      <section className="container grid lg:grid-cols-2 gap-8 items-center py-12 md:py-24">
+        <div className="flex flex-col items-start gap-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-headline font-bold">
+            Exquisite Shelving &amp; Shutters
+          </h1>
+          <p className="text-lg text-muted-foreground">
+            Discover bespoke, high-quality solutions to elevate your space. Crafted with precision, designed for life.
           </p>
+          <div className="flex gap-4">
+            <Button size="lg" asChild>
+              <Link href="/products">Explore Our Products</Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <Link href="/contact">Contact Us</Link>
+            </Button>
+          </div>
         </div>
-        
-        <ProductGrid products={products} />
-      </div>
+        <div className="aspect-square relative rounded-lg overflow-hidden border shadow-lg">
+            <Image 
+                src="https://placehold.co/800x800.png"
+                alt="Stylish living room with modern shelving"
+                fill
+                className="object-cover"
+                data-ai-hint="living room shelving"
+            />
+        </div>
+      </section>
       <VisitUs />
     </>
   );
