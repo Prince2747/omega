@@ -1,6 +1,7 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState, useEffect } from 'react';
+import { useFormStatus } from 'react-dom';
 import { saveProduct } from '@/lib/actions';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -8,7 +9,6 @@ import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/card';
 import type { Product } from '@/lib/types';
-import { useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { Loader2 } from 'lucide-react';
 import Link from 'next/link';
@@ -31,7 +31,7 @@ function SubmitButton({ isEditing }: { isEditing: boolean }) {
 export function ProductForm({ product }: ProductFormProps) {
   const isEditing = !!product;
   const initialState = { errors: {}, message: null };
-  const [state, dispatch] = useFormState(saveProduct, initialState);
+  const [state, dispatch] = useActionState(saveProduct, initialState);
   const { toast } = useToast();
 
   useEffect(() => {
@@ -52,7 +52,7 @@ export function ProductForm({ product }: ProductFormProps) {
             <CardDescription>{isEditing ? 'Update the details of your product.' : 'Fill out the form to add a new product to your catalog.'}</CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
-            {isEditing && <input type="hidden" name="id" value={product.id} />}
+            <input type="hidden" name="id" value={product?.id || ''} />
             <div className="space-y-2">
                 <Label htmlFor="name">Product Name</Label>
                 <Input id="name" name="name" defaultValue={product?.name} required />

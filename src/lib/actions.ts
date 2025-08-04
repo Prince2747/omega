@@ -15,7 +15,7 @@ const productSchema = z.object({
   imageUrl: z.string().url('Must be a valid URL'),
 });
 
-export async function saveProduct(formData: FormData) {
+export async function saveProduct(prevState: any, formData: FormData) {
   const rawData = Object.fromEntries(formData.entries());
   const validatedFields = productSchema.safeParse(rawData);
 
