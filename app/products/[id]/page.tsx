@@ -4,8 +4,6 @@ import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { SocialShareButtons } from '@/components/SocialShareButtons';
-import { Button } from '@/components/ui/button';
-import { ShoppingCart } from 'lucide-react';
 
 export default async function ProductDetailPage({ params }: { params: { id: string } }) {
   const product = await getProductById(params.id);
@@ -47,12 +45,6 @@ export default async function ProductDetailPage({ params }: { params: { id: stri
             </div>
 
             <Separator className="my-6" />
-
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-end gap-4">
-              <Button size="lg" className="w-full sm:w-auto">
-                <ShoppingCart className="mr-2" /> Add to Cart
-              </Button>
-            </div>
             
             <div className="mt-8 text-center">
               <SocialShareButtons product={product} />
