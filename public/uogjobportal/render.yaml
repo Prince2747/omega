@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: uogjobportal-socket
+    env: node
+    rootDir: server
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: UPSTASH_REDIS_URL
+        sync: false
+      - key: UPSTASH_REDIS_TOKEN
+        sync: false
+      - key: PORT
+        value: 3001
+    healthCheckPath: /
+    autoDeploy: true 
