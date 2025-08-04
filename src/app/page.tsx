@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { VisitUs } from '@/components/VisitUs';
+import { HowItWorks } from '@/components/HowItWorks';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -14,7 +15,7 @@ export default function LandingPage() {
           <p className="text-lg text-muted-foreground">
             Discover bespoke, high-quality solutions to elevate your space. Crafted with precision, designed for life.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 w-full justify-center lg:justify-start">
             <Button size="lg" asChild>
               <Link href="/products">Explore Our Products</Link>
             </Button>
@@ -33,6 +34,7 @@ export default function LandingPage() {
             />
         </div>
       </section>
+      <HowItWorks />
       <VisitUs />
     </>
   );
