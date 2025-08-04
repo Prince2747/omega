@@ -9,6 +9,9 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 export const metadata: Metadata = {
   title: 'Omega Shelf & Shutter',
   description: 'A modern e-commerce platform for curated products.',
+  icons: {
+    icon: '/omega.png',
+  }
 };
 
 export default function RootLayout({

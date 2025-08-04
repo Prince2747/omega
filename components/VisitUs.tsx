@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin } from 'lucide-react';
-
+import  maps  from "../public/maps.jpg"
 export function VisitUs() {
   const companyLocation = 'TK building, wello sefer';
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(companyLocation)}`;
@@ -20,7 +20,7 @@ export function VisitUs() {
           <Link href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
             <div className="relative aspect-video md:aspect-[2.4/1] group">
               <Image
-                src="/uogjobportal/maps.png"
+                src={maps}
                 alt="Map to our office"
                 fill
                 className="object-cover transition-transform duration-300 group-hover:scale-105"

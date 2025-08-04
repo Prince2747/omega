@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { Logo } from '@/components/Logo';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import Image from 'next/image';
 
 export function Header() {
   return (
@@ -9,7 +9,7 @@ export function Header() {
       <div className="container flex h-14 items-center">
         <div className="flex-1 flex items-center justify-start">
           <Link href="/" className="flex items-center space-x-2">
-            <Logo className="h-6 w-6 text-primary" />
+            <Image src="/omega.png" alt="Omega logo" width={24} height={24} className="h-6 w-6" />
             <span className="font-bold font-headline text-lg">Omega Shelf & Shutter</span>
           </Link>
         </div>

@@ -9,7 +9,7 @@ export let products: Product[] = [
     name: 'Classic Leather Watch',
     description: 'A timeless piece that blends classic design with modern mechanics. Perfect for any occasion.',
     price: 249.99,
-    imageUrl: 'https://placehold.co/600x600.png',
+    imageUrl: '/items/watch.png',
     category: 'Watch',
     specs: {
       'Case Material': 'Stainless Steel',
@@ -23,7 +23,7 @@ export let products: Product[] = [
     name: 'Wireless Noise-Cancelling Headphones',
     description: 'Immerse yourself in sound. These headphones offer superior noise-cancellation and audio quality.',
     price: 349.00,
-    imageUrl: 'https://placehold.co/600x600.png',
+    imageUrl: '/items/headphones.png',
     category: 'Headphones',
     specs: {
       'Connectivity': 'Bluetooth 5.0',
@@ -37,7 +37,7 @@ export let products: Product[] = [
     name: 'Artisan Ceramic Mug',
     description: 'Handcrafted ceramic mug, perfect for your morning coffee or tea. Each piece is unique.',
     price: 25.50,
-    imageUrl: 'https://placehold.co/600x600.png',
+    imageUrl: '/items/mug.png',
     category: 'Mug',
     specs: {
       'Material': 'Ceramic',
@@ -51,7 +51,7 @@ export let products: Product[] = [
     name: 'Minimalist Desk Lamp',
     description: 'A sleek and modern desk lamp that provides warm, adjustable light for your workspace.',
     price: 79.00,
-    imageUrl: 'https://placehold.co/600x600.png',
+    imageUrl: '/items/lamp.png',
     category: 'Lamp',
     specs: {
       'Material': 'Aluminum, ABS',
