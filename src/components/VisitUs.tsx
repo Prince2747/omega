@@ -20,7 +20,7 @@ export function VisitUs() {
           <Link href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
             <div className="relative aspect-video md:aspect-[2.4/1] group">
               <Image
-                src="/uogjobportal/maps.png"
+                src="https://images.unsplash.com/photo-1594398993423-86f1474a7a85"
                 alt="Map to our office"
                 fill
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
