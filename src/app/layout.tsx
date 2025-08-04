@@ -7,7 +7,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from '@/components/ThemeProvider';
 
 export const metadata: Metadata = {
-  title: 'ShelfView',
+  title: 'Omega Shelf & Shutter',
   description: 'A modern e-commerce platform for curated products.',
 };
 

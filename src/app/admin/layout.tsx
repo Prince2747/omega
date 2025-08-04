@@ -27,7 +27,7 @@ export default function AdminLayout({
            <div className="flex items-center gap-2 p-2 justify-between">
             <Link href="/" className="flex items-center gap-2">
               <Package2 className="h-6 w-6 text-primary" />
-              <span className="font-bold font-headline text-lg">ShelfView</span>
+              <span className="font-bold font-headline text-lg">Omega Shelf &amp; Shutter</span>
             </Link>
            </div>
         </SidebarHeader>

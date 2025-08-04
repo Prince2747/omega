@@ -10,7 +10,7 @@ export function Footer() {
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-headline font-semibold mb-4">ShelfView</h3>
+            <h3 className="text-lg font-headline font-semibold mb-4">Omega Shelf &amp; Shutter</h3>
             <p className="text-sm text-muted-foreground">Your one-stop shop for quality products, curated with care and precision.</p>
           </div>
           <div>
@@ -38,7 +38,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-border pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} ShelfView. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Omega Shelf &amp; Shutter. All rights reserved.</p>
         </div>
       </div>
     </footer>

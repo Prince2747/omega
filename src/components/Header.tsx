@@ -10,7 +10,7 @@ export function Header() {
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Package2 className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline text-lg">ShelfView</span>
+            <span className="font-bold font-headline text-lg">Omega Shelf &amp; Shutter</span>
           </Link>
           <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
             <Link
