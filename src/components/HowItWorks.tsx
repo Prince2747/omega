@@ -28,17 +28,26 @@ const steps = [
 ];
 
 const cardVariants = {
-  hidden: (direction: 'left' | 'right') => ({
+  hidden: {
     opacity: 0,
-    x: direction === 'left' ? -100 : 100,
-  }),
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.8,
-      ease: 'easeOut',
-    },
+    scale: 0.5,
+  },
+  visible: (i: number) => {
+    const isEven = i % 2 === 0;
+    const xPosition = isEven ? -100 : 100;
+    // For a 4-column layout, we want the inner ones to move less than the outer ones.
+    // However, with a simple left/right logic, this is a bit tricky without more complex index checks.
+    // For now, let's stick to a simple left/right movement from center.
+    // A more advanced version could be: const xPosition = (i - 1.5) * 150;
+    return {
+        opacity: 1,
+        scale: 1,
+        x: 0, // Cards will animate to their natural position in the grid
+        transition: {
+            duration: 0.8,
+            ease: 'easeOut',
+        },
+    }
   },
 };
 
@@ -53,14 +62,11 @@ export function HowItWorks() {
           </p>
         </div>
         <div className="relative">
-          {/* Dotted line */}
-          <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-border -translate-y-1/2"></div>
-          
           <div className="grid md:grid-cols-4 gap-8">
             {steps.map((step, index) => (
               <motion.div
                 key={index}
-                custom={index % 2 === 0 ? 'left' : 'right'}
+                custom={index}
                 variants={cardVariants}
                 initial="hidden"
                 whileInView="visible"
