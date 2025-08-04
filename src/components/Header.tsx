@@ -7,12 +7,19 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
-        <div className="mr-4 flex">
+        <div className="mr-auto flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Package2 className="h-6 w-6 text-primary" />
             <span className="font-bold font-headline text-lg">Omega Shelf & Shutter</span>
           </Link>
-          <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
+        </div>
+        <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
+            <Link
+              href="/"
+              className="transition-colors hover:text-foreground/80 text-foreground/60"
+            >
+              Home
+            </Link>
             <Link
               href="/products"
               className="transition-colors hover:text-foreground/80 text-foreground/60"
@@ -25,9 +32,8 @@ export function Header() {
             >
               Contact Us
             </Link>
-          </nav>
-        </div>
-        <div className="flex flex-1 items-center justify-end space-x-2">
+        </nav>
+        <div className="ml-auto flex flex-1 items-center justify-end space-x-2">
             <ThemeToggle />
         </div>
       </div>
