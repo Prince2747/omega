@@ -20,10 +20,11 @@ export function VisitUs() {
           <Link href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
             <div className="relative aspect-video md:aspect-[2.4/1] group">
               <Image
-                src="/maps.png"
+                src="https://placehold.co/1200x400.png"
                 alt="Map to our office"
                 fill
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
+                data-ai-hint="map location"
               />
               <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                 <div className="text-center text-white p-4 bg-black/30 rounded-lg backdrop-blur-sm">
