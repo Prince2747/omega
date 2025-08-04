@@ -9,7 +9,7 @@ export let products: Product[] = [
     name: 'Industrial Wall Shelf',
     description: 'A sturdy and stylish wall shelf, combining rustic wood with a strong metal frame. Perfect for books, plants, or decor in any room.',
     price: 129.99,
-    imageUrl: 'https://placehold.co/600x600.png',
+    imageUrl: '/items/photo_2025-08-04_12-09-29.jpg',
     category: 'Shelving',
     specs: {
       'Material': 'Reclaimed Wood, Steel',
@@ -23,7 +23,7 @@ export let products: Product[] = [
     name: 'Modern Floating Shelves',
     description: 'Create a clean, contemporary look with these minimalist floating shelves. Their hidden bracket system makes them appear to float on the wall.',
     price: 89.00,
-    imageUrl: 'https://placehold.co/600x600.png',
+    imageUrl: '/items/photo_2025-08-04_12-09-40.jpg',
     category: 'Shelving',
     specs: {
       'Material': 'MDF with Veneer',
@@ -37,7 +37,7 @@ export let products: Product[] = [
     name: 'Classic Plantation Shutters',
     description: 'Add timeless elegance and control light with these high-quality plantation shutters. Custom-fit for your windows.',
     price: 350.00,
-    imageUrl: 'https://placehold.co/600x600.png',
+    imageUrl: '/items/photo_2025-08-04_12-09-52.jpg',
     category: 'Shutters',
     specs: {
       'Material': 'Solid Basswood',
@@ -51,7 +51,7 @@ export let products: Product[] = [
     name: 'Rolling Security Shutters',
     description: 'Protect your storefront or home with these heavy-duty rolling security shutters. Provides excellent security and weather protection.',
     price: 550.00,
-    imageUrl: 'https://placehold.co/600x600.png',
+    imageUrl: '/items/photo_2025-08-04_12-10-01.jpg',
     category: 'Shutters',
     specs: {
       'Material': 'Extruded Aluminum',
