@@ -33,16 +33,10 @@ const cardVariants = {
     scale: 0.5,
   },
   visible: (i: number) => {
-    const isEven = i % 2 === 0;
-    const xPosition = isEven ? -100 : 100;
-    // For a 4-column layout, we want the inner ones to move less than the outer ones.
-    // However, with a simple left/right logic, this is a bit tricky without more complex index checks.
-    // For now, let's stick to a simple left/right movement from center.
-    // A more advanced version could be: const xPosition = (i - 1.5) * 150;
     return {
         opacity: 1,
         scale: 1,
-        x: 0, // Cards will animate to their natural position in the grid
+        x: 0,
         transition: {
             duration: 0.8,
             ease: 'easeOut',
@@ -72,7 +66,7 @@ export function HowItWorks() {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
               >
-                <Card className="text-center h-full shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Card className="text-center h-full shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col justify-center">
                   <CardHeader>
                     <div className="mx-auto bg-secondary rounded-full p-4 w-fit mb-4">
                       {step.icon}
