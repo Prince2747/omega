@@ -22,8 +22,8 @@ const steps = [
   },
   {
     icon: <Truck className="w-10 h-10 text-primary" />,
-    title: 'Swift Delivery',
-    description: 'We deliver your order right to your doorstep, quickly and carefully.',
+    title: 'Swift Delivery and Installation',
+    description: 'We deliver and install your order right to your doorstep, quickly and carefully.',
   },
 ];
 
