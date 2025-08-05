@@ -1,16 +1,18 @@
 import { Button } from '@/components/ui/button';
 import { VisitUs } from '@/components/VisitUs';
 import { HowItWorks } from '@/components/HowItWorks';
+import { FuturisticSlideshow } from '@/components/FuturisticSlideshow';
 import Image from 'next/image';
 import Link from 'next/link';
 import homep from "../public/photo_2025-08-04_10-42-56.jpg"
+
 export default function LandingPage() {
   return (
     <>
       <section className="container grid lg:grid-cols-2 gap-8 items-center py-12 md:py-24">
         <div className="flex flex-col items-center lg:items-start gap-4 text-center lg:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-headline font-bold">
-            Exquisite Shelving &amp; Shutters this is real
+            Exquisite Shelving &amp; Shutters
           </h1>
           <p className="text-lg text-muted-foreground">
             Discover bespoke, high-quality solutions to elevate your space. Crafted with precision, designed for life.
@@ -34,6 +36,7 @@ export default function LandingPage() {
             />
         </div>
       </section>
+      <FuturisticSlideshow />
       <HowItWorks />
       <VisitUs />
     </>
