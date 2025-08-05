@@ -1,9 +1,17 @@
+'use client';
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import Image from 'next/image';
 import Omega from "../public/Omega.jpg"
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
+import { Menu, X } from 'lucide-react';
+import React from 'react';
+
 export function Header() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
@@ -34,6 +42,29 @@ export function Header() {
             </Link>
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-2">
+            <div className="md:hidden">
+                <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+                    <SheetTrigger asChild>
+                        <Button variant="ghost" size="icon">
+                            <Menu className="h-6 w-6" />
+                            <span className="sr-only">Open Menu</span>
+                        </Button>
+                    </SheetTrigger>
+                    <SheetContent side="right">
+                        <nav className="flex flex-col gap-6 text-lg font-medium mt-8">
+                            <SheetClose asChild>
+                                <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+                            </SheetClose>
+                            <SheetClose asChild>
+                                <Link href="/products" className="hover:text-primary transition-colors">Our Products</Link>
+                            </SheetClose>
+                            <SheetClose asChild>
+                                <Link href="/contact" className="hover:text-primary transition-colors">Contact Us</Link>
+                            </SheetClose>
+                        </nav>
+                    </SheetContent>
+                </Sheet>
+            </div>
             <ThemeToggle />
         </div>
       </div>

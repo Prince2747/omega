@@ -65,7 +65,7 @@ export let products: Product[] = [
     name: 'Corner Bookshelf',
     description: 'Maximize your space with this elegant 5-tier corner bookshelf. Perfect for small apartments or tight spaces.',
     price: 159.99,
-    imageUrl: 'https://placehold.co/600x600.png',
+    imageUrl: '/items/photo_2025-08-04_12-09-17.jpg',
     category: 'Shelving',
     specs: {
       'Material': 'Engineered Wood, Metal Frame',
@@ -79,7 +79,7 @@ export let products: Product[] = [
     name: 'Honeycomb Floating Shelves',
     description: 'A set of three hexagonal shelves that can be arranged in a unique honeycomb pattern on your wall for a modern, geometric look.',
     price: 79.99,
-    imageUrl: 'https://placehold.co/600x600.png',
+    imageUrl: '/items/photo_2025-08-04_12-09-34.jpg',
     category: 'Shelving',
     specs: {
       'Material': 'Paulownia Wood',
@@ -93,7 +93,7 @@ export let products: Product[] = [
     name: 'Faux Wood Interior Shutters',
     description: 'Get the classic look of wood shutters with the durability and moisture resistance of faux wood. Ideal for kitchens and bathrooms.',
     price: 280.00,
-    imageUrl: 'https://placehold.co/600x600.png',
+    imageUrl: '/items/photo_2025-08-04_12-09-53.jpg',
     category: 'Shutters',
     specs: {
       'Material': 'Composite Faux Wood',
@@ -107,7 +107,7 @@ export let products: Product[] = [
     name: 'Exterior Bermuda Shutters',
     description: 'Add a touch of tropical charm and hurricane protection with these top-hinged Bermuda shutters. Prop them open to let in the breeze.',
     price: 420.00,
-    imageUrl: 'https://placehold.co/600x600.png',
+    imageUrl: '/items/photo_2025-08-04_12-09-38.jpg',
     category: 'Shutters',
     specs: {
       'Material': 'Composite or Aluminum',
