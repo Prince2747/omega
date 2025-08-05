@@ -12,13 +12,54 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import Autoplay from "embla-carousel-autoplay"
-import { products } from '@/lib/data';
 import { Button } from './ui/button';
 import { Card } from './ui/card';
 
-export function FuturisticSlideshow() {
-    const featuredProducts = products.slice(0, 5);
+const slideshowItems = [
+    {
+        id: '1',
+        title: 'Modern Industrial Design',
+        description: 'Combining raw metal with finished wood for a stunning contrast.',
+        imageUrl: '/slideshow/slide1.jpg',
+        href: '/products/1',
+        dataAiHint: 'industrial shelf'
+    },
+    {
+        id: '2',
+        title: 'Secure & Stylish Shutters',
+        description: 'Enhance your security without compromising on aesthetics.',
+        imageUrl: '/slideshow/slide2.jpg',
+        href: '/products/4',
+        dataAiHint: 'security shutter'
+    },
+    {
+        id: '3',
+        title: 'Elegant Light Control',
+        description: 'Our plantation shutters offer both privacy and sophisticated style.',
+        imageUrl: '/slideshow/slide3.jpg',
+        href: '/products/3',
+        dataAiHint: 'plantation shutter'
+    },
+    {
+        id: '4',
+        title: 'Floating Shelf Concepts',
+        description: 'Minimalist designs that create a sense of space and openness.',
+        imageUrl: '/slideshow/slide4.jpg',
+        href: '/products/2',
+        dataAiHint: 'floating shelf'
+    },
+    {
+        id: '5',
+        title: 'Customized Storage Solutions',
+        description: 'From corner units to full wall systems, we build to your needs.',
+        imageUrl: '/slideshow/slide5.jpg',
+        href: '/products/5',
+        dataAiHint: 'custom shelving'
+    },
+];
 
+
+export function FuturisticSlideshow() {
     return (
         <section className="bg-background py-12 md:py-24">
             <div className="container">
@@ -42,8 +83,8 @@ export function FuturisticSlideshow() {
                     className="w-full"
                 >
                     <CarouselContent>
-                        {featuredProducts.map((product, index) => (
-                            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                        {slideshowItems.map((item, index) => (
+                            <CarouselItem key={item.id} className="md:basis-1/2 lg:basis-1/3">
                                 <div className="p-1">
                                     <Card className="overflow-hidden group">
                                         <motion.div
@@ -54,21 +95,21 @@ export function FuturisticSlideshow() {
                                             className="relative aspect-video"
                                         >
                                             <Image
-                                                src={product.imageUrl}
-                                                alt={product.name}
+                                                src={item.imageUrl}
+                                                alt={item.title}
                                                 fill
                                                 className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                                                data-ai-hint={`${product.category.toLowerCase()} product`}
+                                                data-ai-hint={item.dataAiHint}
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                                             <div className="absolute bottom-0 left-0 p-6">
-                                                <h3 className="text-2xl font-headline font-bold text-white shadow-lg">{product.name}</h3>
+                                                <h3 className="text-2xl font-headline font-bold text-white shadow-lg">{item.title}</h3>
                                             </div>
                                         </motion.div>
                                         <div className="p-6 bg-secondary/20">
-                                            <p className="text-muted-foreground h-12 mb-4">{product.description.substring(0, 80)}...</p>
+                                            <p className="text-muted-foreground h-12 mb-4">{item.description}</p>
                                             <Button asChild className="w-full">
-                                                <Link href={`/products/${product.id}`}>Explore More</Link>
+                                                <Link href={item.href}>Explore More</Link>
                                             </Button>
                                         </div>
                                     </Card>
