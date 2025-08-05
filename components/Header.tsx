@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import Image from 'next/image';
 import Omega from "../public/Omega.jpg"
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { Menu, X } from 'lucide-react';
 import React from 'react';
 
@@ -51,6 +51,9 @@ export function Header() {
                         </Button>
                     </SheetTrigger>
                     <SheetContent side="right">
+                        <SheetHeader>
+                            <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+                        </SheetHeader>
                         <nav className="flex flex-col gap-6 text-lg font-medium mt-8">
                             <SheetClose asChild>
                                 <Link href="/" className="hover:text-primary transition-colors">Home</Link>
