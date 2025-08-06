@@ -3,8 +3,8 @@
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import { z } from 'zod';
-import { products } from './data';
-import type { Product } from './types';
+import { db } from './firebase/clientApp';
+import { collection, addDoc, doc, updateDoc, deleteDoc, setDoc } from 'firebase/firestore';
 
 const productSchema = z.object({
   id: z.string().optional(),
@@ -26,26 +26,27 @@ export async function saveProduct(prevState: any, formData: FormData) {
   }
 
   const { id, ...data } = validatedFields.data;
+  
+  // Create a dummy specs object for now.
+  const productData = {
+    ...data,
+    specs: {
+      Material: 'High-quality material',
+      Finish: 'Customizable',
+    }
+  }
 
   try {
     if (id) {
       // Edit existing product
-      const index = products.findIndex((p) => p.id === id);
-      if (index !== -1) {
-        products[index] = { ...products[index], ...data };
-      }
+      const productRef = doc(db, 'products', id);
+      await updateDoc(productRef, productData);
     } else {
       // Add new product
-      const newProduct: Product = {
-        ...data,
-        id: (products.length + 1).toString(),
-        specs: { // Dummy specs for new products
-          'New Feature': 'Customizable'
-        }
-      };
-      products.push(newProduct);
+      await addDoc(collection(db, "products"), productData);
     }
   } catch (error) {
+    console.error("Error saving product: ", error);
     return {
       message: 'Database Error: Failed to save product.',
     };
@@ -61,10 +62,8 @@ export async function saveProduct(prevState: any, formData: FormData) {
 
 export async function deleteProduct(id: string) {
     try {
-        const index = products.findIndex((p) => p.id === id);
-        if (index !== -1) {
-            products.splice(index, 1);
-        }
+        const productRef = doc(db, 'products', id);
+        await deleteDoc(productRef);
     } catch (error) {
         return {
             message: 'Database Error: Failed to delete product.',
