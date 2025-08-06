@@ -3,12 +3,13 @@ import {initializeApp, getApp, getApps} from 'firebase/app';
 import {getAuth} from 'firebase/auth';
 
 const firebaseConfig = {
-  "apiKey": "YOUR_API_KEY",
-  "authDomain": "YOUR_AUTH_DOMAIN",
-  "projectId": "YOUR_PROJECT_ID",
-  "storageBucket": "YOUR_STORAGE_BUCKET",
-  "messagingSenderId": "YOUR_MESSAGING_SENDER_ID",
-  "appId": "YOUR_APP_ID"
+  apiKey: "AIzaSyBMxYla82M5KUrV6NwGgnGt98FeD914ORQ",
+  authDomain: "omega-915d8.firebaseapp.com",
+  projectId: "omega-915d8",
+  storageBucket: "omega-915d8.firebasestorage.app",
+  messagingSenderId: "536198706830",
+  appId: "1:536198706830:web:8cfe42a2873ac21a35fbdf",
+  measurementId: "G-9QNK2VTW9G"
 };
 
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
