@@ -70,6 +70,62 @@ const products: Product[] = [
             Finish: 'Client\'s Choice',
             'Lead Time': '4-6 Weeks'
         }
+    },
+    {
+        id: '6',
+        name: 'Rustic Reclaimed Wood Shelf',
+        description: 'Each shelf is unique, crafted from reclaimed barn wood, bringing a piece of history and character to your home.',
+        price: 129.99,
+        imageUrl: 'https://placehold.co/600x600.png',
+        category: 'Shelving',
+        specs: {
+            Material: 'Reclaimed Oak',
+            Dimensions: '30" W x 10" D x 1.5" H',
+            Finish: 'Natural, Clear Coat',
+            'Mounting': 'Iron Brackets Included'
+        }
+    },
+    {
+        id: '7',
+        name: 'Accordion Security Grille',
+        description: 'A stylish and retractable security solution for storefronts and patios. Folds away neatly when not in use.',
+        price: 1250.00,
+        imageUrl: 'https://placehold.co/600x600.png',
+        category: 'Shutters',
+        specs: {
+            Material: 'Galvanized Steel',
+            Operation: 'Manual Pull/Push',
+            Finish: 'White Powder Coat',
+            Locking: 'Dual-point Key Lock'
+        }
+    },
+    {
+        id: '8',
+        name: 'Modern Glass Display Shelf',
+        description: 'Showcase your collectibles or fine china on these elegant tempered glass shelves with polished chrome hardware.',
+        price: 220.50,
+        imageUrl: 'https://placehold.co/600x600.png',
+        category: 'Shelving',
+        specs: {
+            Material: 'Tempered Glass & Chrome',
+            Dimensions: '32" W x 9" D x 48" H',
+            'Glass Thickness': '8mm',
+            'Weight Limit': '20 lbs per shelf'
+        }
+    },
+    {
+        id: '9',
+        name: 'Industrial Pipe Bookcase',
+        description: 'A statement piece built from industrial-grade pipes and solid wood planks. Perfect for an urban or steampunk aesthetic.',
+        price: 650.00,
+        imageUrl: 'https://placehold.co/600x600.png',
+        category: 'Shelving',
+        specs: {
+            Material: 'Solid Fir & Iron Pipe',
+            Dimensions: '48" W x 14" D x 80" H',
+            Finish: 'Dark Walnut Stain',
+            'Assembly': 'Required'
+        }
     }
 ];
 
