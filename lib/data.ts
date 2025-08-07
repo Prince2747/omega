@@ -1,23 +1,88 @@
 import type { Product } from './types';
-import { db } from './firebase/clientApp';
-import { collection, getDocs, doc, getDoc, query } from 'firebase/firestore';
 
-// The functions now interact with Firestore instead of an in-memory array.
+const products: Product[] = [
+    {
+        id: '1',
+        name: 'Modern Industrial Shelf',
+        description: 'A sleek, durable shelf combining raw metal with finished wood for a stunning industrial look. Perfect for books, decor, and more.',
+        price: 189.99,
+        imageUrl: '/slideshow/slide1.jpg',
+        category: 'Shelving',
+        specs: {
+            Material: 'Pine Wood & Steel',
+            Dimensions: '36" W x 12" D x 72" H',
+            Finish: 'Matte Black Steel, Stained Pine',
+            'Load Capacity': '50 lbs per shelf'
+        }
+    },
+    {
+        id: '2',
+        name: 'Minimalist Floating Shelf',
+        description: 'Create a clean, contemporary look with these easy-to-install floating shelves. The hidden bracket system makes them appear to float on your wall.',
+        price: 79.99,
+        imageUrl: '/slideshow/slide4.jpg',
+        category: 'Shelving',
+        specs: {
+            Material: 'MDF with Veneer',
+            Dimensions: '24" W x 8" D x 2" H',
+            Finish: 'Oak Veneer',
+            'Load Capacity': '15 lbs'
+        }
+    },
+    {
+        id: '3',
+        name: 'Classic Plantation Shutters',
+        description: 'Timeless elegance meets modern functionality. These shutters offer excellent light control and privacy for any room.',
+        price: 349.99,
+        imageUrl: '/slideshow/slide3.jpg',
+        category: 'Shutters',
+        specs: {
+            Material: 'Basswood',
+            'Louver Size': '3.5 inches',
+            Finish: 'Bright White Paint',
+            'Custom Sizes': 'Available'
+        }
+    },
+    {
+        id: '4',
+        name: 'Heavy-Duty Security Shutter',
+        description: 'Protect your property with our robust, roll-down security shutters. Made from high-grade aluminum for maximum strength.',
+        price: 899.99,
+        imageUrl: '/slideshow/slide2.jpg',
+        category: 'Shutters',
+        specs: {
+            Material: 'Extruded Aluminum',
+            Operation: 'Motorized with Remote',
+            Finish: 'Powder-coated Gray',
+            Rating: 'Security Grade 3'
+        }
+    },
+    {
+        id: '5',
+        name: 'Custom Corner Shelving System',
+        description: 'Maximize your space with a shelving system designed to fit perfectly into any corner. Fully customizable to your specifications.',
+        price: 499.99,
+        imageUrl: '/slideshow/slide5.jpg',
+        category: 'Shelving',
+        specs: {
+            Material: 'Plywood',
+            Dimensions: 'Custom',
+            Finish: 'Client\'s Choice',
+            'Lead Time': '4-6 Weeks'
+        }
+    }
+];
+
+// The functions now interact with an in-memory array.
 
 export async function getProducts(): Promise<Product[]> {
-    const productsCol = collection(db, 'products');
-    const productsSnapshot = await getDocs(productsCol);
-    const productList = productsSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as Product));
-    return productList;
+    // Simulate async operation
+    await new Promise(resolve => setTimeout(resolve, 100));
+    return products;
 }
 
 export async function getProductById(id: string): Promise<Product | undefined> {
-    const productRef = doc(db, 'products', id);
-    const productSnap = await getDoc(productRef);
-
-    if (productSnap.exists()) {
-        return { id: productSnap.id, ...productSnap.data() } as Product;
-    } else {
-        return undefined;
-    }
+    // Simulate async operation
+    await new Promise(resolve => setTimeout(resolve, 100));
+    return products.find(p => p.id === id);
 }
