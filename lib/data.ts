@@ -76,7 +76,7 @@ const products: Product[] = [
         name: 'Rustic Reclaimed Wood Shelf',
         description: 'Each shelf is unique, crafted from reclaimed barn wood, bringing a piece of history and character to your home.',
         price: 129.99,
-        imageUrl: 'https://placehold.co/600x600.png',
+        imageUrl: '/slideshow/photo_4_2025-08-05_10-46-32.jpg',
         category: 'Shelving',
         specs: {
             Material: 'Reclaimed Oak',
@@ -90,7 +90,7 @@ const products: Product[] = [
         name: 'Accordion Security Grille',
         description: 'A stylish and retractable security solution for storefronts and patios. Folds away neatly when not in use.',
         price: 1250.00,
-        imageUrl: 'https://placehold.co/600x600.png',
+        imageUrl: '/slideshow/photo_5_2025-08-05_10-46-32.jpg',
         category: 'Shutters',
         specs: {
             Material: 'Galvanized Steel',
@@ -104,7 +104,7 @@ const products: Product[] = [
         name: 'Modern Glass Display Shelf',
         description: 'Showcase your collectibles or fine china on these elegant tempered glass shelves with polished chrome hardware.',
         price: 220.50,
-        imageUrl: 'https://placehold.co/600x600.png',
+        imageUrl: '/slideshow/photo_6_2025-08-05_10-46-32.jpg',
         category: 'Shelving',
         specs: {
             Material: 'Tempered Glass & Chrome',
@@ -118,13 +118,97 @@ const products: Product[] = [
         name: 'Industrial Pipe Bookcase',
         description: 'A statement piece built from industrial-grade pipes and solid wood planks. Perfect for an urban or steampunk aesthetic.',
         price: 650.00,
-        imageUrl: 'https://placehold.co/600x600.png',
+        imageUrl: '/slideshow/photo_7_2025-08-05_10-46-32.jpg',
         category: 'Shelving',
         specs: {
             Material: 'Solid Fir & Iron Pipe',
             Dimensions: '48" W x 14" D x 80" H',
             Finish: 'Dark Walnut Stain',
             'Assembly': 'Required'
+        }
+    },
+    {
+        id: '10',
+        name: 'Honeycomb Hexagon Shelves (Set of 3)',
+        description: 'A playful and modern set of three hexagonal floating shelves. Arrange them in a honeycomb pattern to create a dynamic wall display.',
+        price: 89.99,
+        imageUrl: 'https://placehold.co/600x600.png',
+        category: 'Shelving',
+        specs: {
+            Material: 'Solid Oak',
+            Dimensions: '14" W x 12" H x 5" D (each)',
+            Finish: 'Natural Wax',
+            Installation: 'Hidden Bracket System'
+        }
+    },
+    {
+        id: '11',
+        name: 'Leaning Ladder Bookcase',
+        description: 'A chic and minimalist five-tier ladder shelf that leans securely against any wall. Perfect for small spaces and renters.',
+        price: 210.00,
+        imageUrl: 'https://placehold.co/600x600.png',
+        category: 'Shelving',
+        specs: {
+            Material: 'Bamboo',
+            Dimensions: '24" W x 14" D x 70" H',
+            Finish: 'Light Natural Finish',
+            'Assembly': 'Required'
+        }
+    },
+    {
+        id: '12',
+        name: 'Wall-Mounted Media Console Shelf',
+        description: 'A wide floating shelf designed to hold your cable box, gaming console, and soundbar, creating a clean, organized entertainment area.',
+        price: 155.00,
+        imageUrl: 'https://placehold.co/600x600.png',
+        category: 'Shelving',
+        specs: {
+            Material: 'Composite Wood',
+            Dimensions: '48" W x 12" D x 6" H',
+            Finish: 'Espresso Laminate',
+            'Cable Management': 'Included'
+        }
+    },
+    {
+        id: '13',
+        name: 'Faux Wood Blinds',
+        description: 'Get the classic look of wood shutters at a fraction of the cost. These durable, moisture-resistant blinds are perfect for kitchens and bathrooms.',
+        price: 199.50,
+        imageUrl: 'https://placehold.co/600x600.png',
+        category: 'Shutters',
+        specs: {
+            Material: 'PVC/Vinyl Composite',
+            'Louver Size': '2.5 inches',
+            Finish: 'Embossed Wood Grain',
+            'Custom Sizes': 'Available'
+        }
+    },
+    {
+        id: '14',
+        name: 'Cafe Style Shutters',
+        description: 'These charming shutters cover only the bottom half of your window, providing privacy while letting in plenty of natural light.',
+        price: 280.00,
+        imageUrl: 'https://placehold.co/600x600.png',
+        category: 'Shutters',
+        specs: {
+            Material: 'Poplar Wood',
+            'Panel Height': '36 inches (customizable)',
+            Finish: 'Silk White',
+            'Hinge Type': 'Non-mortise'
+        }
+    },
+    {
+        id: '15',
+        name: 'Bahama Style Exterior Shutters',
+        description: 'Add tropical flair and functional storm protection with these top-hinged exterior shutters that prop open to provide shade.',
+        price: 450.00,
+        imageUrl: 'https://placehold.co/600x600.png',
+        category: 'Shutters',
+        specs: {
+            Material: 'Weather-Resistant Composite',
+            Operation: 'Manual with Telescoping Arms',
+            Finish: 'Custom Colors Available',
+            'Wind Load': 'Rated for 120 MPH'
         }
     }
 ];
