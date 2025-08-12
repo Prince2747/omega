@@ -3,7 +3,7 @@ import type { Product } from './types';
 const products: Product[] = [
     {
         id: '1',
-        name: 'Modern Industrial Shelf',
+        name: 'Dixon Shelf',
         description: 'A sleek, durable shelf combining raw metal with finished wood for a stunning industrial look. Perfect for books, decor, and more.',
         price: 189.99,
         imageUrl: '/slideshow/slide1.jpg',
@@ -115,7 +115,7 @@ const products: Product[] = [
     },
     {
         id: '9',
-        name: 'Industrial Pipe Bookcase',
+        name: 'Heavy Duty Shelf',
         description: 'A statement piece built from industrial-grade pipes and solid wood planks. Perfect for an urban or steampunk aesthetic.',
         price: 650.00,
         imageUrl: '/slideshow/photo_7_2025-08-05_10-46-32.jpg',
