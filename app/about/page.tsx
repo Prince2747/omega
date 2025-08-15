@@ -32,7 +32,8 @@ export default function AboutUsPage() {
     <div className="container py-12 md:py-24">
       <section className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-headline font-bold">About Alfa Storage Solution</h1>
-        <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
+        <p className="mt-4 text-2xl font-semibold text-primary font-headline tracking-wide">"Fix the mess."</p>
+        <p className="mt-6 text-lg text-muted-foreground max-w-3xl mx-auto">
           We believe that storage should not only be functional but also beautiful. Our mission is to create innovative, high-quality shelving and storage systems that transform spaces and simplify lives.
         </p>
       </section>

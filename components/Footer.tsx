@@ -16,7 +16,7 @@ export function Footer() {
               <Logo className="h-6 w-6" />
               <h3 className="text-lg font-headline font-semibold">Alfa Storage Solution</h3>
             </div>
-            <p className="text-sm text-muted-foreground">Innovative solutions for modern living. Quality crafted, thoughtfully designed.</p>
+            <p className="text-sm text-muted-foreground">Fix the mess. Innovative solutions for modern living.</p>
           </div>
           <div>
             <h3 className="text-lg font-headline font-semibold mb-4">Quick Links</h3>
