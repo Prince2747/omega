@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { cn } from '@/lib/utils';
@@ -7,7 +8,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from '@/components/ThemeProvider';
 
 export const metadata: Metadata = {
-  title: 'Omega Shelf & Shutter',
+  title: 'Alfa Storage Solution',
   description: 'A modern e-commerce platform for curated products.',
   icons: {
     icon: '/omega.png',

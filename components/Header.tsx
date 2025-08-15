@@ -1,12 +1,12 @@
+
 'use client';
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/ThemeToggle';
-import Image from 'next/image';
-import Omega from "../public/Omega.jpg"
+import { Logo } from '@/components/Logo';
 import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetHeader, SheetTitle } from '@/components/ui/sheet';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import React from 'react';
 
 export function Header() {
@@ -17,8 +17,8 @@ export function Header() {
       <div className="container flex h-14 items-center">
         <div className="flex-1 flex items-center justify-start">
           <Link href="/" className="flex items-center space-x-2">
-            <Image src={Omega} alt="Omega logo" width={40} height={24} className="h-6 w-6" />
-            <span className="font-bold font-headline text-lg">Omega Shelf & Shutter</span>
+            <Logo className="h-6 w-6" />
+            <span className="font-bold font-headline text-lg">Alfa Storage Solution</span>
           </Link>
         </div>
         <nav className="hidden items-center justify-center space-x-6 text-sm font-medium md:flex flex-1">
@@ -33,6 +33,12 @@ export function Header() {
               className="relative text-foreground/60 transition-colors hover:text-foreground/80 after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100"
             >
               Our Products
+            </Link>
+            <Link
+              href="/about"
+              className="relative text-foreground/60 transition-colors hover:text-foreground/80 after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100"
+            >
+              About Us
             </Link>
             <Link
               href="/contact"
@@ -60,6 +66,9 @@ export function Header() {
                             </SheetClose>
                             <SheetClose asChild>
                                 <Link href="/products" className="hover:text-primary transition-colors">Our Products</Link>
+                            </SheetClose>
+                             <SheetClose asChild>
+                                <Link href="/about" className="hover:text-primary transition-colors">About Us</Link>
                             </SheetClose>
                             <SheetClose asChild>
                                 <Link href="/contact" className="hover:text-primary transition-colors">Contact Us</Link>

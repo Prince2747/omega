@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
@@ -8,7 +9,7 @@ import { Phone, MapPin, Mail } from 'lucide-react';
 export default function ContactPage() {
   const companyLocation = 'TK building, wello sefer';
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(companyLocation)}`;
-  const companyEmail = 'omegashelfandshutters@gmail.com';
+  const companyEmail = 'contact@alfastorage.com';
 
   return (
     <div className="container py-12 md:py-24">
