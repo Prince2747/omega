@@ -21,7 +21,7 @@ export function Header() {
             <span className="font-bold font-headline text-lg">Alfa Storage Solution</span>
           </Link>
         </div>
-        <nav className="hidden items-center justify-center space-x-6 text-sm font-medium md:flex flex-1">
+        <nav className="hidden items-center justify-center space-x-6 text-sm font-medium md:flex">
             <Link
               href="/"
               className="relative text-foreground/60 transition-colors hover:text-foreground/80 after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100"
