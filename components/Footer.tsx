@@ -32,7 +32,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li className="flex items-center">
                 <Phone className="w-4 h-4 mr-2 shrink-0" />
-                <span>+251911208396</span>
+                <span>0984000000 / 0911646645</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="w-4 h-4 mr-2 mt-1 shrink-0" />
