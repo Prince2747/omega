@@ -13,7 +13,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
              <div className="flex items-center space-x-2 mb-4">
-              <Logo className="h-6 w-6" />
+              <Logo className="h-8 w-8" />
               <h3 className="text-lg font-headline font-semibold">Alfa Storage Solution</h3>
             </div>
             <p className="text-sm text-muted-foreground">Fix the mess. Innovative solutions for modern living.</p>

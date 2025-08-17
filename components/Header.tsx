@@ -17,7 +17,7 @@ export function Header() {
       <div className="container flex h-14 items-center">
         <div className="flex-1 flex items-center justify-start">
           <Link href="/" className="flex items-center space-x-2">
-            <Logo className="h-6 w-6" />
+            <Logo className="h-8 w-8" />
             <span className="font-bold font-headline text-lg">Alfa Storage Solution</span>
           </Link>
         </div>
