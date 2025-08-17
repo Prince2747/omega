@@ -16,9 +16,9 @@ export default function AboutUsPage() {
       </section>
 
       <section className="mb-16">
-         <div className="relative aspect-video md:aspect-[2.8/1] rounded-lg overflow-hidden border shadow-lg bg-card">
+         <div className="relative aspect-video md:aspect-[2.8/1] rounded-lg overflow-hidden border shadow-lg bg-white">
             <Image 
-                src="/ALFA STORAGE SOLUTION Logo Design.png"
+                src="/logo124.png"
                 alt="Alfa Storage Solution Logo"
                 fill
                 className="object-contain p-8"
@@ -62,7 +62,7 @@ export default function AboutUsPage() {
         </Card>
       </section>
 
-      <section className="mb-16">
+      <section>
         <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-headline font-bold">Our Core Values</h2>
         </div>

@@ -7,7 +7,7 @@ export function Logo({ className }: { className?: string }) {
   return (
     <div className={cn("relative", className)}>
         <Image
-          src="/ALFA STORAGE SOLUTION Logo Design.png"
+          src="/logo124.png"
           alt="Alfa Storage Solution Logo"
           fill
           className="object-contain"
