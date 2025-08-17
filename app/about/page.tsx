@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Users, Target, Eye } from 'lucide-react';
+import { Users, Target, Eye, Rocket, Star, Heart, CheckCircle } from 'lucide-react';
 
 const teamMembers = [
   {
@@ -34,7 +34,7 @@ export default function AboutUsPage() {
         <h1 className="text-4xl md:text-5xl font-headline font-bold">About Alfa Storage Solution</h1>
         <p className="mt-4 text-2xl font-semibold text-primary font-headline tracking-wide">"Fix the mess."</p>
         <p className="mt-6 text-lg text-muted-foreground max-w-3xl mx-auto">
-          We believe that storage should not only be functional but also beautiful. Our mission is to create innovative, high-quality shelving and storage systems that transform spaces and simplify lives.
+          At Alfa Storage Solution, we understand the pivotal role of storage in improving productivity, organization, and living standards. Our mission is to create practical, durable, and modern storage systems that make a meaningful difference for businesses and households across Ethiopia.
         </p>
       </section>
 
@@ -55,12 +55,12 @@ export default function AboutUsPage() {
         <Card>
           <CardHeader>
             <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit mb-4">
-                <Target className="w-10 h-10 text-primary" />
+                <Rocket className="w-10 h-10 text-primary" />
             </div>
-            <CardTitle className="font-headline text-2xl">Our Mission</CardTitle>
+            <CardTitle className="font-headline text-2xl">Our Goals</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">To design and build elegant, durable, and intelligent storage solutions that enhance the beauty and functionality of any space.</p>
+            <p className="text-muted-foreground">With a forward-thinking approach and strong commitment to excellence, Alfa Storage Solution continually invests in modern, high-tech manufacturing equipment. Our aim is to boost both the quality and output of our products by collaborating with leading global producers.</p>
           </CardContent>
         </Card>
         <Card>
@@ -71,20 +71,56 @@ export default function AboutUsPage() {
             <CardTitle className="font-headline text-2xl">Our Vision</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">To be the leading innovator in home and commercial storage, recognized for our commitment to design, quality, and customer satisfaction.</p>
+            <p className="text-muted-foreground">To be recognized as Ethiopia’s foremost and most respected provider of storage solutions.</p>
           </CardContent>
         </Card>
         <Card>
            <CardHeader>
             <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit mb-4">
-                <Users className="w-10 h-10 text-primary" />
+                <Target className="w-10 h-10 text-primary" />
             </div>
-            <CardTitle className="font-headline text-2xl">Our Team</CardTitle>
+            <CardTitle className="font-headline text-2xl">Our Mission</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">A dedicated group of designers, engineers, and craftspeople passionate about creating exceptional products.</p>
+            <p className="text-muted-foreground">To deliver innovative, efficient, and competitively priced storage products — from shutters to shelves — to an ever-expanding customer base, while maintaining our responsibility to society and the environment.</p>
           </CardContent>
         </Card>
+      </section>
+
+      <section className="mb-16">
+        <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-headline font-bold">Our Core Values</h2>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <Card>
+            <CardHeader>
+              <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit mb-4"><Heart className="w-8 h-8 text-primary" /></div>
+              <CardTitle className="font-headline text-xl">Customer Commitment</CardTitle>
+            </CardHeader>
+            <CardContent><p className="text-muted-foreground">Striving to understand and exceed client needs.</p></CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit mb-4"><Star className="w-8 h-8 text-primary" /></div>
+              <CardTitle className="font-headline text-xl">Innovation & Improvement</CardTitle>
+            </CardHeader>
+            <CardContent><p className="text-muted-foreground">Continuously upgrading our technology and product designs.</p></CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit mb-4"><CheckCircle className="w-8 h-8 text-primary" /></div>
+              <CardTitle className="font-headline text-xl">Quality Assurance</CardTitle>
+            </CardHeader>
+            <CardContent><p className="text-muted-foreground">Delivering durable, reliable, and well-crafted solutions.</p></CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit mb-4"><Users className="w-8 h-8 text-primary" /></div>
+              <CardTitle className="font-headline text-xl">Community Impact</CardTitle>
+            </CardHeader>
+            <CardContent><p className="text-muted-foreground">Contributing positively to local communities and national progress.</p></CardContent>
+          </Card>
+        </div>
       </section>
 
       <section>
