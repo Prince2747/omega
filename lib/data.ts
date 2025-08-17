@@ -30,34 +30,6 @@ const products: Product[] = [
         }
     },
     {
-        id: '3',
-        name: 'Classic Plantation Shutters',
-        description: 'Timeless elegance meets modern functionality. These shutters offer excellent light control and privacy for any room.',
-        price: 349.99,
-        imageUrl: '/slideshow/slide3.jpg',
-        category: 'Shutters',
-        specs: {
-            Material: 'Basswood',
-            'Louver Size': '3.5 inches',
-            Finish: 'Bright White Paint',
-            'Custom Sizes': 'Available'
-        }
-    },
-    {
-        id: '4',
-        name: 'Heavy-Duty Security Shutter',
-        description: 'Protect your property with our robust, roll-down security shutters. Made from high-grade aluminum for maximum strength.',
-        price: 899.99,
-        imageUrl: '/slideshow/slide2.jpg',
-        category: 'Shutters',
-        specs: {
-            Material: 'Extruded Aluminum',
-            Operation: 'Motorized with Remote',
-            Finish: 'Powder-coated Gray',
-            Rating: 'Security Grade 3'
-        }
-    },
-    {
         id: '5',
         name: 'Custom Corner Shelving System',
         description: 'Maximize your space with a shelving system designed to fit perfectly into any corner. Fully customizable to your specifications.',
@@ -83,20 +55,6 @@ const products: Product[] = [
             Dimensions: '30" W x 10" D x 1.5" H',
             Finish: 'Natural, Clear Coat',
             'Mounting': 'Iron Brackets Included'
-        }
-    },
-    {
-        id: '7',
-        name: 'Accordion Security Grille',
-        description: 'A stylish and retractable security solution for storefronts and patios. Folds away neatly when not in use.',
-        price: 1250.00,
-        imageUrl: '/slideshow/photo_5_2025-08-05_10-46-32.jpg',
-        category: 'Shutters',
-        specs: {
-            Material: 'Galvanized Steel',
-            Operation: 'Manual Pull/Push',
-            Finish: 'White Powder Coat',
-            Locking: 'Dual-point Key Lock'
         }
     },
     {

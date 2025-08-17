@@ -8,7 +8,7 @@ const steps = [
   {
     icon: <Eye className="w-10 h-10 text-primary" />,
     title: 'View Our Products',
-    description: 'Explore our curated collection of high-quality shelving and shutters.',
+    description: 'Explore our curated collection of high-quality shelving solutions.',
   },
   {
     icon: <CheckSquare className="w-10 h-10 text-primary" />,

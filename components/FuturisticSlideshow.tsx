@@ -26,22 +26,6 @@ const slideshowItems = [
     },
     {
         id: '2',
-        title: 'Secure & Stylish Shutters',
-        description: 'Enhance your security without compromising on aesthetics.',
-        imageUrl: '/slideshow/slide2.jpg',
-        href: '/products/4',
-        dataAiHint: 'security shutter'
-    },
-    {
-        id: '3',
-        title: 'Elegant Light Control',
-        description: 'Our plantation shutters offer both privacy and sophisticated style.',
-        imageUrl: '/slideshow/slide3.jpg',
-        href: '/products/3',
-        dataAiHint: 'plantation shutter'
-    },
-    {
-        id: '4',
         title: 'Floating Shelf Concepts',
         description: 'Minimalist designs that create a sense of space and openness.',
         imageUrl: '/slideshow/slide4.jpg',
@@ -55,6 +39,22 @@ const slideshowItems = [
         imageUrl: '/slideshow/slide5.jpg',
         href: '/products/5',
         dataAiHint: 'custom shelving'
+    },
+    {
+        id: '6',
+        title: 'Rustic Reclaimed Wood Shelf',
+        description: 'Each shelf is unique, crafted from reclaimed barn wood.',
+        imageUrl: '/slideshow/photo_4_2025-08-05_10-46-32.jpg',
+        href: '/products/6',
+        dataAiHint: 'rustic shelf'
+    },
+    {
+        id: '8',
+        title: 'Modern Glass Display Shelf',
+        description: 'Showcase your collectibles or fine china on these elegant tempered glass shelves.',
+        imageUrl: '/slideshow/photo_6_2025-08-05_10-46-32.jpg',
+        href: '/products/8',
+        dataAiHint: 'glass shelf'
     },
 ];
 

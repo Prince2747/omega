@@ -35,7 +35,7 @@ export default function AboutUsPage() {
             <CardTitle className="font-headline text-2xl">Our Goals</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">With a forward-thinking approach and strong commitment to excellence, Alfa Storage Solution continually invests in modern, high-tech manufacturing equipment. Our aim is to boost both the quality and output of our products by collaborating with leading global producers. We specialize in robust shutters, versatile shelving systems, and other customized storage solutions designed to international standards. These improvements allow us to tap into the expanding market opportunities fueled by national development projects and Ethiopia’s growing economy.</p>
+            <p className="text-muted-foreground">With a forward-thinking approach and strong commitment to excellence, Alfa Storage Solution continually invests in modern, high-tech manufacturing equipment. Our aim is to boost both the quality and output of our products by collaborating with leading global producers. We specialize in versatile shelving systems and other customized storage solutions designed to international standards. These improvements allow us to tap into the expanding market opportunities fueled by national development projects and Ethiopia’s growing economy.</p>
           </CardContent>
         </Card>
         <Card>
@@ -57,7 +57,7 @@ export default function AboutUsPage() {
             <CardTitle className="font-headline text-2xl">Our Mission</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">To deliver innovative, efficient, and competitively priced storage products — from shutters to shelves — to an ever-expanding customer base, while maintaining our responsibility to society and the environment.</p>
+            <p className="text-muted-foreground">To deliver innovative, efficient, and competitively priced shelving products to an ever-expanding customer base, while maintaining our responsibility to society and the environment.</p>
           </CardContent>
         </Card>
       </section>
