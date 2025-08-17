@@ -9,7 +9,7 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 
 export const metadata: Metadata = {
   title: 'Alfa Storage Solution',
-  description: 'A modern e-commerce platform for curated products.',
+  description: 'A modern storage solutions .',
   icons: {
     icon: '/logo124.png',
   }
