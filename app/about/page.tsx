@@ -16,7 +16,7 @@ export default function AboutUsPage() {
       </section>
 
       <section className="mb-16">
-         <div className="relative aspect-video md:aspect-[2.8/1] rounded-lg overflow-hidden border shadow-lg bg-secondary/20">
+         <div className="relative aspect-video md:aspect-[2.8/1] rounded-lg overflow-hidden border shadow-lg bg-card">
             <Image 
                 src="/ALFA STORAGE SOLUTION Logo Design.png"
                 alt="Alfa Storage Solution Logo"
