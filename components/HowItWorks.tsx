@@ -17,8 +17,8 @@ const steps = [
   },
   {
     icon: <PhoneCall className="w-10 h-10 text-primary" />,
-    title: 'Contact Us to Order',
-    description: 'Reach out to our team to finalize your order and arrange for delivery.',
+    title: 'Finalize Payment',
+    description: 'Reach out to our team to finalize your payment and arrange for delivery.',
   },
   {
     icon: <Truck className="w-10 h-10 text-primary" />,
