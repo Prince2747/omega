@@ -3,30 +3,6 @@ import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Users, Target, Eye, Rocket, Star, Heart, CheckCircle } from 'lucide-react';
 
-const teamMembers = [
-  {
-    name: 'Alex Johnson',
-    role: 'Founder & Lead Designer',
-    bio: 'With a passion for minimalist design and functional art, Alex founded Alfa to revolutionize storage solutions.',
-    imageUrl: 'https://placehold.co/400x400.png',
-    dataAiHint: 'professional portrait'
-  },
-  {
-    name: 'Samantha Bee',
-    role: 'Head of Operations',
-    bio: 'Samantha ensures that every product meets our high standards and that your order arrives on time, every time.',
-    imageUrl: 'https://placehold.co/400x400.png',
-    dataAiHint: 'smiling woman'
-  },
-  {
-    name: 'Carlos Rodriguez',
-    role: 'Master Craftsman',
-    bio: 'Carlos brings decades of woodworking and metal fabrication experience, turning designs into reality.',
-    imageUrl: 'https://placehold.co/400x400.png',
-    dataAiHint: 'craftsman portrait'
-  },
-];
-
 export default function AboutUsPage() {
   return (
     <div className="container py-12 md:py-24">
@@ -60,7 +36,7 @@ export default function AboutUsPage() {
             <CardTitle className="font-headline text-2xl">Our Goals</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground">With a forward-thinking approach and strong commitment to excellence, Alfa Storage Solution continually invests in modern, high-tech manufacturing equipment. Our aim is to boost both the quality and output of our products by collaborating with leading global producers.</p>
+            <p className="text-muted-foreground">With a forward-thinking approach and strong commitment to excellence, Alfa Storage Solution continually invests in modern, high-tech manufacturing equipment. Our aim is to boost both the quality and output of our products by collaborating with leading global producers. We specialize in robust shutters, versatile shelving systems, and other customized storage solutions designed to international standards. These improvements allow us to tap into the expanding market opportunities fueled by national development projects and Ethiopia’s growing economy.</p>
           </CardContent>
         </Card>
         <Card>
@@ -120,35 +96,6 @@ export default function AboutUsPage() {
             </CardHeader>
             <CardContent><p className="text-muted-foreground">Contributing positively to local communities and national progress.</p></CardContent>
           </Card>
-        </div>
-      </section>
-
-      <section>
-        <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold">Meet the Team</h2>
-            <p className="mt-3 text-lg text-muted-foreground max-w-xl mx-auto">
-                The skilled individuals behind our innovative products.
-            </p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamMembers.map((member) => (
-            <Card key={member.name} className="text-center overflow-hidden">
-                <div className="aspect-square relative">
-                    <Image
-                        src={member.imageUrl}
-                        alt={`Portrait of ${member.name}`}
-                        fill
-                        className="object-cover"
-                        data-ai-hint={member.dataAiHint}
-                    />
-                </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-headline font-semibold">{member.name}</h3>
-                <p className="text-primary font-medium">{member.role}</p>
-                <p className="text-muted-foreground mt-2 text-sm">{member.bio}</p>
-              </CardContent>
-            </Card>
-          ))}
         </div>
       </section>
     </div>
