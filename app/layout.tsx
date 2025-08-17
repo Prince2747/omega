@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Alfa Storage Solution',
   description: 'A modern e-commerce platform for curated products.',
   icons: {
-    icon: '/omega.png',
+    icon: '/logo124.png',
   }
 };
 
