@@ -1,7 +1,10 @@
 
+
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Users, Target, Eye, Rocket, Star, Heart, CheckCircle } from 'lucide-react';
+import logoImage from '/public/ALFA STORAGE SOLUTION Logo Design.png';
+
 
 export default function AboutUsPage() {
   return (
@@ -15,15 +18,13 @@ export default function AboutUsPage() {
       </section>
 
       <section className="mb-16">
-         <div className="relative aspect-video md:aspect-[2.8/1] rounded-lg overflow-hidden border shadow-lg">
+         <div className="relative aspect-video md:aspect-[2.8/1] rounded-lg overflow-hidden border shadow-lg bg-secondary/20">
             <Image 
-                src="https://placehold.co/1200x500.png"
-                alt="Modern workshop with organized tools and materials"
+                src={logoImage}
+                alt="Alfa Storage Solution Logo"
                 fill
-                className="object-cover"
-                data-ai-hint="modern workshop"
+                className="object-contain p-8"
             />
-             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
         </div>
       </section>
 
@@ -56,7 +57,7 @@ export default function AboutUsPage() {
                 <Target className="w-10 h-10 text-primary" />
             </div>
             <CardTitle className="font-headline text-2xl">Our Mission</CardTitle>
-          </CardHeader>
+          </Header>
           <CardContent>
             <p className="text-muted-foreground">To deliver innovative, efficient, and competitively priced storage products — from shutters to shelves — to an ever-expanding customer base, while maintaining our responsibility to society and the environment.</p>
           </CardContent>
