@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Eye, CheckSquare, CreditCard, Truck } from 'lucide-react';
+import { Eye, CheckSquare, Truck, PhoneCall } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const steps = [
@@ -16,9 +16,9 @@ const steps = [
     description: 'Select the perfect items that match your style and meet your needs.',
   },
   {
-    icon: <CreditCard className="w-10 h-10 text-primary" />,
-    title: 'Make a Secure Payment',
-    description: 'Complete your purchase through our safe and secure payment gateway.',
+    icon: <PhoneCall className="w-10 h-10 text-primary" />,
+    title: 'Contact Us to Order',
+    description: 'Reach out to our team to finalize your order and arrange for delivery.',
   },
   {
     icon: <Truck className="w-10 h-10 text-primary" />,
