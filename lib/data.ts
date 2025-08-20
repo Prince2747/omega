@@ -3,7 +3,7 @@ import type { Product } from './types';
 const products: Product[] = [
     {
         id: '1',
-        name: 'Dixon Shelf',
+        name: 'Dixon Shelfs',
         description: 'A sleek, durable shelf combining raw metal with finished wood for a stunning industrial look. Perfect for books, decor, and more.',
         price: 189.99,
         imageUrl: '/slideshow/slide1.jpg',
