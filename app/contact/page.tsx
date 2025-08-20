@@ -64,7 +64,7 @@ export default function ContactPage() {
                     </div>
                      <div className="flex items-start">
                         <Phone className="w-5 h-5 mr-3 mt-1 shrink-0 text-primary" />
-                        <span>0984000000 / 0911646645</span>
+                        <span>0984000000 / 0911646645 / 0983939393 / 0911230422</span>
                     </div>
                     <div className="flex items-start">
                         <MapPin className="w-5 h-5 mr-3 mt-1 shrink-0 text-primary" />

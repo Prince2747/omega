@@ -13,7 +13,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
              <div className="flex items-center space-x-2 mb-4">
-              <Logo className="h-8 w-8" />
+              <Logo className="h-10 w-10" />
               <h3 className="text-lg font-headline font-semibold">Alfa Storage Solution</h3>
             </div>
             <p className="text-sm text-muted-foreground">Fix the mess. Innovative solutions for modern living.</p>
@@ -32,7 +32,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li className="flex items-center">
                 <Phone className="w-4 h-4 mr-2 shrink-0" />
-                <span>0984000000 / 0911646645</span>
+                <span>0984000000 / 0911646645 / 0983939393 / 0911230422</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="w-4 h-4 mr-2 mt-1 shrink-0" />
