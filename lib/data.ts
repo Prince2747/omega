@@ -17,7 +17,7 @@ const products: Product[] = [
     },
     {
         id: '2',
-        name: 'Minimalist Floating Shelf',
+        name: 'Dixon Shelfs',
         description: 'Create a clean, contemporary look with these easy-to-install floating shelves. The hidden bracket system makes them appear to float on your wall.',
         price: 79.99,
         imageUrl: '/slideshow/slide4.jpg',
@@ -31,7 +31,7 @@ const products: Product[] = [
     },
     {
         id: '5',
-        name: 'Custom Corner Shelving System',
+        name: 'Dixon Shelfs',
         description: 'Maximize your space with a shelving system designed to fit perfectly into any corner. Fully customizable to your specifications.',
         price: 499.99,
         imageUrl: '/slideshow/slide5.jpg',
@@ -45,7 +45,7 @@ const products: Product[] = [
     },
     {
         id: '6',
-        name: 'Rustic Reclaimed Wood Shelf',
+        name: 'Dixon Shelfs',
         description: 'Each shelf is unique, crafted from reclaimed barn wood, bringing a piece of history and character to your home.',
         price: 129.99,
         imageUrl: '/slideshow/photo_4_2025-08-05_10-46-32.jpg',
@@ -59,7 +59,7 @@ const products: Product[] = [
     },
     {
         id: '8',
-        name: 'Modern Glass Display Shelf',
+        name: 'Dixon Shelfs',
         description: 'Showcase your collectibles or fine china on these elegant tempered glass shelves with polished chrome hardware.',
         price: 220.50,
         imageUrl: '/slideshow/photo_6_2025-08-05_10-46-32.jpg',
@@ -73,7 +73,7 @@ const products: Product[] = [
     },
     {
         id: '9',
-        name: 'Heavy Duty Shelf',
+        name: 'Dixon Shelfs',
         description: 'A statement piece built from industrial-grade pipes and solid wood planks. Perfect for an urban or steampunk aesthetic.',
         price: 650.00,
         imageUrl: '/slideshow/photo_7_2025-08-05_10-46-32.jpg',
