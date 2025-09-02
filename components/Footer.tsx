@@ -4,7 +4,7 @@ import { MapPin, Phone, Twitter, Facebook, Instagram, LogIn } from 'lucide-react
 import { Logo } from './Logo';
 
 export function Footer() {
-  const companyLocation = 'TK building, wello sefer';
+  const companyLocation = 'Medhin Building, Legehar';
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(companyLocation)}`;
 
   return (

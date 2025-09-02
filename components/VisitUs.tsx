@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { MapPin } from 'lucide-react';
 import  maps  from "../public/maps.jpg"
 export function VisitUs() {
-  const companyLocation = 'TK building, wello sefer';
+  const companyLocation = 'Medhin Building, Legehar';
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(companyLocation)}`;
 
   return (

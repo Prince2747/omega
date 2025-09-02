@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Phone, MapPin, Mail } from 'lucide-react';
 
 export default function ContactPage() {
-  const companyLocation = 'TK building, wello sefer';
+  const companyLocation = 'Medhin Building, Legehar';
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(companyLocation)}`;
   const companyEmail = 'contact@alfastorage.com';
 
