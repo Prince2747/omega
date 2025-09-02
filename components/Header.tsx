@@ -3,7 +3,6 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ThemeToggle } from '@/components/ThemeToggle';
 import { Logo } from '@/components/Logo';
 import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
@@ -17,7 +16,7 @@ export function Header() {
       <div className="container flex h-14 items-center">
         <div className="flex-1 flex items-center justify-start">
           <Link href="/" className="flex items-center space-x-2">
-            <Logo className="h-8 w-8" />
+            <Logo className="h-10 w-10" />
             <span className="font-bold font-headline text-lg">Alfa Storage Solution</span>
           </Link>
         </div>
@@ -77,7 +76,6 @@ export function Header() {
                     </SheetContent>
                 </Sheet>
             </div>
-            <ThemeToggle />
         </div>
       </div>
     </header>

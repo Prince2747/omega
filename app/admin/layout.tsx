@@ -11,9 +11,8 @@ import {
   SidebarFooter
 } from '@/components/ui/sidebar';
 import Link from 'next/link';
-import { Package, Home, Settings, Package2 } from 'lucide-react';
+import { Package, Home, Settings } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { ThemeToggle } from '@/components/ThemeToggle';
 
 export default function AdminLayout({
   children,
@@ -53,7 +52,6 @@ export default function AdminLayout({
               </SidebarMenu>
             </SidebarContent>
             <SidebarFooter>
-              <ThemeToggle />
             </SidebarFooter>
           </Sidebar>
           <SidebarInset>
