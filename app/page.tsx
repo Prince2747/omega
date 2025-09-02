@@ -4,7 +4,7 @@ import { HowItWorks } from '@/components/HowItWorks';
 import { FuturisticSlideshow } from '@/components/FuturisticSlideshow';
 import Image from 'next/image';
 import Link from 'next/link';
-import homep from "../public/photo_2025-08-04_10-42-56.jpg"
+import homep from "../public/photo_2025-09-02_07-29-34.jpg"
 
 export default function LandingPage() {
   return (

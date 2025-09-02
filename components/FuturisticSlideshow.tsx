@@ -20,7 +20,7 @@ const slideshowItems = [
         id: '1',
         title: 'Modern Industrial Design',
         description: 'Combining raw metal with finished wood for a stunning contrast.',
-        imageUrl: '/slideshow/slide1.jpg',
+        imageUrl: '/slideshow/slide6.jpg',
         href: '/products/1',
         dataAiHint: 'industrial shelf'
     },
@@ -28,7 +28,7 @@ const slideshowItems = [
         id: '2',
         title: 'Floating Shelf Concepts',
         description: 'Minimalist designs that create a sense of space and openness.',
-        imageUrl: '/slideshow/slide4.jpg',
+        imageUrl: '/slideshow/slide7.jpg',
         href: '/products/2',
         dataAiHint: 'floating shelf'
     },
@@ -36,7 +36,7 @@ const slideshowItems = [
         id: '5',
         title: 'Customized Storage Solutions',
         description: 'From corner units to full wall systems, we build to your needs.',
-        imageUrl: '/slideshow/slide5.jpg',
+        imageUrl: '/slideshow/slide8.jpg',
         href: '/products/5',
         dataAiHint: 'custom shelving'
     },
